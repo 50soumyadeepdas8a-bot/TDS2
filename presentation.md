@@ -2,9 +2,9 @@
 marp: true
 title: Product Documentation Presentation
 paginate: true
-theme: default
+theme: gaia
 style: |
-  /* Custom styling on top of the default theme */
+  /* Custom styling on top of the "gaia" theme */
 
   section {
     font-family: "Segoe UI", system-ui, sans-serif;
@@ -32,10 +32,14 @@ style: |
   }
 ---
 
+<!-- _class: lead -->
+
 # Product Documentation  
 ### Technical Writer Presentation
 
 **Email:** `50soumyadeepdas8a@gmail.com`
+
+This slide uses a **Marp directive** (`<!-- _class: lead -->`) to apply a special style.
 
 ---
 
@@ -52,6 +56,8 @@ style: |
 <footer>Page ${pageNumber}</footer>
 
 ---
+
+<!-- _backgroundColor: #f4f4f4 -->
 
 # Background Image Slide
 
