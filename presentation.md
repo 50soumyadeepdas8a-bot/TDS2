@@ -32,14 +32,19 @@ style: |
 
 **Email:** `50soumyadeepdas8a@gmail.com`
 
+This slide uses a **Marp directive**: `<!-- _class: lead -->`.
+
 ---
 
 # Why Use Marp?
 
-- Markdown source  
-- Version control friendly  
-- Export formats: PDF, PPTX, HTML  
-- Supports directives, CSS, images, and math
+- Plain **Markdown** source  
+- Easy to keep in **Git / version control**  
+- Export to **PDF / PPTX / HTML**  
+- Supports:
+  - Custom styling
+  - Background images
+  - **LaTeX mathematical equations**
 
 <footer>Page ${pageNumber}</footer>
 
@@ -52,7 +57,7 @@ style: |
 ![bg](https://images.unsplash.com/photo-1518770660439-4636190af475)
 
 <div class="box">
-This slide has a background image and custom styling.
+This slide has a background image and custom CSS styling.
 </div>
 
 ---
