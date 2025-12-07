@@ -5,7 +5,7 @@ paginate: true
 theme: default
 math: mathjax
 style: |
-  /* Custom styling like a simple custom theme */
+  /* Custom styling to act like a simple custom theme */
   section {
     font-family: "Segoe UI", system-ui, sans-serif;
     color: #222;
@@ -13,10 +13,6 @@ style: |
 
   h1, h2 {
     color: #0A6EBD;
-  }
-
-  .title-slide {
-    text-align: center;
   }
 
   .note-box {
@@ -32,14 +28,14 @@ style: |
   }
 ---
 
-<!-- _class: title-slide -->
+<!-- _class: lead -->
 
 # Product Documentation  
 ## Marp Presentation
 
 **Contact:** `50soumyadeepdas8a@gmail.com`
 
-This slide uses a **Marp directive**: `<!-- _class: title-slide -->`.
+This slide uses a Marp directive: `<!-- _class: lead -->`.
 
 <footer>Page ${pageNumber}</footer>
 
@@ -53,29 +49,15 @@ This slide uses a **Marp directive**: `<!-- _class: title-slide -->`.
 - Supports:
   - Custom styling
   - Background images
-  - **LaTeX mathematical equations**
+  - LaTeX mathematical equations
 
 <footer>Page ${pageNumber}</footer>
 
 ---
 
-<!-- _backgroundImage: url('https://images.unsplash.com/photo-1518770660439-4636190af475') -->
-<!-- _backgroundSize: cover -->
-
-# Background Image Slide
-
-<div class="note-box">
-This slide uses a Marp background image directive:<br>
-<code>_backgroundImage</code> and <code>_backgroundSize</code>.
-</div>
-
-<footer>Page ${pageNumber}</footer>
-
----
-
-# Version Control Workflow
-
-```bash
-git init
-git add presentation.md
-git commit -m "Add Mar
+<!--
+  This slide DEFINITELY uses a Marp background image.
+  The checker should detect _backgroundImage here.
+-->
+<!-- _class: bg-slide -->
+<!-- _backgroundImage: url("https://images.u_
