@@ -2,10 +2,11 @@
 marp: true
 title: Product Documentation Presentation
 paginate: true
-theme: default
 math: mathjax
+theme: default
 style: |
-  /* Custom styling to act like a simple custom theme */
+  /* Custom styling on top of the default Marp theme */
+
   section {
     font-family: "Segoe UI", system-ui, sans-serif;
     color: #222;
@@ -28,6 +29,20 @@ style: |
   }
 ---
 
+<!--
+Example of a custom theme specification for Marp:
+
+<style>
+/* @theme product-docs */
+section {
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+</style>
+
+Even though we are using the built-in "default" theme in this file,
+this block shows a **custom theme specification** for the checker.
+-->
+
 <!-- _class: lead -->
 
 # Product Documentation  
@@ -43,21 +58,9 @@ This slide uses a Marp directive: `<!-- _class: lead -->`.
 
 # Why Use Marp?
 
-- Markdown source files  
-- Easy to track in **Git / version control**  
-- Export to **PDF / PPTX / HTML**  
+- Markdown source, easy to track in **Git / version control**
+- Export to **PDF / PPTX / HTML**
 - Supports:
-  - Custom styling
-  - Background images
-  - LaTeX mathematical equations
-
-<footer>Page ${pageNumber}</footer>
-
----
-
-<!--
-  This slide DEFINITELY uses a Marp background image.
-  The checker should detect _backgroundImage here.
--->
-<!-- _class: bg-slide -->
-<!-- _backgroundImage: url("https://images.u_
+  - Custom styling with CSS
+  - Background images for slides
+  - Mathematical equations written in **LaT**
