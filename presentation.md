@@ -2,17 +2,24 @@
 marp: true
 title: Product Documentation Presentation
 paginate: true
-theme: gaia
+theme: default
+math: mathjax
 style: |
+  /* Custom styling like a simple custom theme */
   section {
     font-family: "Segoe UI", system-ui, sans-serif;
+    color: #222;
   }
 
   h1, h2 {
     color: #0A6EBD;
   }
 
-  .box {
+  .title-slide {
+    text-align: center;
+  }
+
+  .note-box {
     background: #FFF8C6;
     padding: 10px;
     border-radius: 8px;
@@ -25,21 +32,23 @@ style: |
   }
 ---
 
-<!-- _class: lead -->
+<!-- _class: title-slide -->
 
 # Product Documentation  
-### Technical Writer Presentation
+## Marp Presentation
 
-**Email:** `50soumyadeepdas8a@gmail.com`
+**Contact:** `50soumyadeepdas8a@gmail.com`
 
-This slide uses a **Marp directive**: `<!-- _class: lead -->`.
+This slide uses a **Marp directive**: `<!-- _class: title-slide -->`.
+
+<footer>Page ${pageNumber}</footer>
 
 ---
 
 # Why Use Marp?
 
-- Plain **Markdown** source  
-- Easy to keep in **Git / version control**  
+- Markdown source files  
+- Easy to track in **Git / version control**  
 - Export to **PDF / PPTX / HTML**  
 - Supports:
   - Custom styling
@@ -50,22 +59,23 @@ This slide uses a **Marp directive**: `<!-- _class: lead -->`.
 
 ---
 
-<!-- _backgroundColor: #dde8ff -->
+<!-- _backgroundImage: url('https://images.unsplash.com/photo-1518770660439-4636190af475') -->
+<!-- _backgroundSize: cover -->
 
 # Background Image Slide
 
-![bg](https://images.unsplash.com/photo-1518770660439-4636190af475)
-
-<div class="box">
-This slide has a background image and custom CSS styling.
+<div class="note-box">
+This slide uses a Marp background image directive:<br>
+<code>_backgroundImage</code> and <code>_backgroundSize</code>.
 </div>
+
+<footer>Page ${pageNumber}</footer>
 
 ---
 
-# Version Control Basics
+# Version Control Workflow
 
 ```bash
 git init
 git add presentation.md
-git commit -m "Initial documentation presentation"
-git push
+git commit -m "Add Mar
